@@ -1,0 +1,203 @@
+Demo 1: Persona-Based Prompting in UI
+Slide Title:
+👤 Prompting for Roles: Agile Team in Action
+
+Slide Content:
+Prompt LLM as different personas:
+
+👨‍💻 Developer → Generate code
+
+✅ QA → Write test cases
+
+📄 Product Owner → Create epics/stories
+
+📈 Stakeholder → Summarize progress
+
+🧑‍⚖️ Governance → Validate compliance
+
+Live Demo:
+Show LLM answering prompts like:
+
+“Write a test for payment failure handling” (QA)
+
+“Give me a sprint review summary for execs” (Stakeholder)
+
+“Create epic and user stories for validation module” (PO)
+
+Speaker Notes:
+
+Here we prompt the LLM by role — like talking to a team of experts. Notice how the LLM adjusts tone, format, and priorities based on who it’s pretending to be. This is UI-based prompting — fast and powerful.
+
+💻 Demo 2: Backend Prompting for CSV Validation
+Slide Title:
+📂 Programmatic Prompting: Validating Data via Code
+
+Slide Content:
+LLM in the backend:
+
+Load PDF rule guide
+
+Load CSV input file
+
+Prompt: "Validate this CSV against these rules"
+
+Return structured results (pass/fail, rule violations)
+
+Live Demo:
+
+Upload CSV + PDF
+
+Show Python script (OpenAI API)
+
+Output: JSON of issues found
+
+Speaker Notes:
+
+This is where prompting meets production. The prompt lives in Python code. You upload a file, and the system auto-validates it using the LLM. Behind the scenes, it reads rules from the PDF, applies them line-by-line to the CSV. Think smart validator bot.
+
+🧱 Demo 3: Prompt Templates in Action
+Slide Title:
+📑 Prompt Templates: Reuse and Scale Prompts
+
+Slide Content:
+Prompt once, reuse everywhere:
+
+Dev → QA → Governance = same prompt skeleton
+
+Use template libraries like LangChain, Jinja2
+
+Automate via API or CLI
+
+Live Demo:
+
+Show a prompt like:
+
+jinja2
+Copy
+Edit
+You are a {{role}}. Analyze the input below:
+{{input_data}}
+Against these rules:
+{{rules}}
+Swap role from QA to PO to SM
+
+See output change accordingly
+
+Speaker Notes:
+
+Prompt templates make your AI system scalable. Instead of hardcoding instructions, we abstract them like functions. This way, teams across engineering, QA, or compliance can reuse logic consistently.
+
+📚 Demo 4: Retrieval-Augmented Prompting (RAG)
+Slide Title:
+📥 Retrieval-Augmented Generation: Smart Rule Ingestion
+
+Slide Content:
+LLM + Document Context:
+
+Vectorize and index PDF guide
+
+Retrieve relevant rules
+
+Prompt LLM with rule + CSV
+
+Output: Precise validation logic
+
+Live Demo:
+
+Upload PDF
+
+Show simulated document chunking + retrieval
+
+Prompt LLM: "Based on section 3.2 of PDF, validate this line item"
+
+Speaker Notes:
+
+LLMs don’t “remember” PDFs. We solve this with RAG: we search inside the doc, extract relevant sections, then inject that text into the LLM prompt. Now it’s document-aware — just like a human would be.
+
+🧠 Wrap-up Slide: Demo Recap
+Slide Title:
+🎯 Recap: 4 Prompting Modes, 4 Real Demos
+
+Slide Content:
+
+Prompting Mode	Demo
+UI Role Prompting	Agile Persona Showcase
+Programmatic API	Backend CSV Validation
+Prompt Templates	Persona-to-Persona Flex
+RAG	PDF-Driven Validation
+
+Speaker Notes:
+
+These demos show how prompting is the glue between humans and smart systems. Whether you’re a developer or stakeholder, you can use LLMs to reason, validate, summarize, and more — if you prompt them well.
+
+Slide 9: Advanced Prompting Techniques
+Slide Title:
+🧠 Going Beyond: Expert Prompting Tactics
+
+Slide Content:
+
+Chain-of-Thought (CoT): Force step-by-step reasoning
+
+Self-Critique: Ask LLM to review its own answer
+
+Multi-Prompt Comparison: Try multiple prompts → rank best
+
+Adversarial Prompting: What breaks the model?
+
+Speaker Notes:
+
+These techniques help push LLMs toward higher accuracy and consistency. Chain-of-thought is great for logic problems. Self-critique can help reduce hallucination. And adversarial prompts? Those show us where the model struggles or can be manipulated.
+
+🛡️ Slide 10: Prompt Safety & Risks
+Slide Title:
+🛡️ Prompt Injection & Safety: What to Watch For
+
+Slide Content:
+
+🧨 Injection attacks: “Ignore above, do X instead…”
+
+🕳️ Over-reliance on hallucinated answers
+
+🧑‍💻 Governance: Logging, auditing, reproducibility
+
+✅ Use system prompts + strong output constraints
+
+Speaker Notes:
+
+LLMs will do whatever the prompt says — even if it's maliciously crafted. In production, we need guardrails. Use system prompts, validate inputs/outputs, and always log what the model saw and said. Prompting is power, and with power comes safety.
+
+🧩 Slide 11: Take-Home Challenge
+Slide Title:
+🧪 Try It Yourself: Prompt Engineering Challenge
+
+Slide Content:
+
+Prompt Jam Challenge:
+
+Create a mini-demo using 1 of the 8 prompt types
+
+Example: Role prompt for HR assistant, or RAG for user manual
+
+Share your prompt + result in the team Slack/Notion
+🎁 Prizes or recognition for most creative solutions
+
+Speaker Notes:
+
+We want you to walk away not just informed, but inspired. Try out one of these prompting methods — use your own workflow or dataset. This challenge is your chance to become a prompt engineer in your own right.
+
+✅ Slide 12: Closing Slide
+Slide Title:
+🚀 Thank You – Keep Prompting Forward
+
+Slide Content:
+
+You’ve seen 8 prompting methods
+
+4 real demos
+
+Now it’s your turn
+🔗 [Internal link to code repo or docs]
+
+Speaker Notes:
+
+Thank you for joining us at Prompt Jam. Prompting isn’t just about language — it’s about building systems that understand, assist, and accelerate. We're just scratching the surface. Let's keep exploring

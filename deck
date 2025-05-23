@@ -1,0 +1,132 @@
+Prompt Jam 2025: Slide Deck with Speaker Notes
+Let’s begin building the presentation deck content. You can copy-paste each section into your preferred presentation tool (PowerPoint, Google Slides, or internal tools). Each slide includes:
+
+Slide Title
+
+Slide Content
+
+Speaker Notes (talking points)
+
+🟦 Slide 1: Title Slide
+Slide Title:
+🎤 Prompt Jam 2025: Unlocking the Power of Large Language Models
+
+Slide Content:
+
+Hosted by [Your Team Name or Org]
+
+Featuring: 8 Prompting Strategies, Live Demos, Practical Use Cases
+
+Speaker Notes:
+
+Welcome to Prompt Jam 2025! Today we’ll go beyond just what LLMs are — we’ll explore how they work, how we prompt them effectively, and how they power real systems, not just chat interfaces. We'll demo practical use cases that cover both technical and non-technical workflows.
+
+🟦 Slide 2: What is an LLM?
+Slide Content:
+
+LLM = Large Language Model
+
+Trained on massive datasets of text
+
+Predicts the next word/token in a sequence
+
+Can answer questions, generate text, summarize, and more
+
+Speaker Notes:
+
+An LLM is essentially a very advanced autocomplete. Given a prompt, it predicts the most likely next tokens. It learns this by training on trillions of words. It has no built-in knowledge — it learns patterns in text. And the way we prompt it determines its output.
+
+🟦 Slide 3: Brief History of LLMs
+Slide Content:
+
+Year	Milestone
+2017	Transformers (Attention Is All You Need)
+2018	GPT-1 (OpenAI)
+2020	GPT-3: 175B Parameters
+2022	ChatGPT (conversational AI)
+2023	GPT-4, Claude, Gemini
+
+Speaker Notes:
+
+LLMs evolved rapidly. The key innovation was the Transformer model in 2017. That allowed models like GPT to scale dramatically — from 117M to 175B parameters. ChatGPT made it accessible, and today we're integrating it into tools, workflows, and apps.
+
+🟦 Slide 4: How Do LLMs Work?
+Slide Content:
+
+Based on Transformer architecture
+
+Tokenize → Embed → Attention Layers → Generate next token
+
+Context window: LLMs “remember” a limited amount of text
+
+No real memory or reasoning — it’s just highly sophisticated pattern matching
+
+Speaker Notes:
+
+The LLM doesn’t "understand" like humans do — it analyzes patterns in words and builds statistical models of language. The more precise your prompt, the better the result. This is why prompting is an essential skill.
+
+🟦 Slide 5: What is Prompting?
+Slide Content:
+
+Prompting = How we communicate with an LLM
+Types:
+
+Zero-shot: Give task directly
+
+Few-shot: Include examples
+
+Chain-of-thought: Ask it to reason step by step
+
+Role prompting: “You are a financial expert…”
+
+Speaker Notes:
+
+Think of prompting as programming in English. A good prompt can completely change the quality of the result. We can also instruct LLMs to take on specific roles, explain logic, or follow formats.
+
+🟦 Slide 6: Why Prompting Matters
+Slide Content:
+✔️ Better outputs
+✔️ Faster results
+✔️ Control format
+✔️ Reduce hallucination
+✔️ Power custom workflows and tools
+
+Speaker Notes:
+
+Prompting isn't just chatting — it's how you shape the model’s behavior. Whether you're building a chatbot, generating tests, or automating documentation, prompting is what gives you control.
+
+🟦 Slide 7: 8 Prompting Techniques
+Slide Content:
+
+Type	Description
+UI Prompting	Natural language via chat
+API Prompting	Programmatic prompting
+Chaining	Multi-step prompt workflows
+Templates	Reusable prompt logic
+Agents	Autonomous LLM behavior
+RAG	Adds knowledge base context
+Embedded	Hidden inside tools
+Meta-prompting	LLMs improve their own prompts
+
+Speaker Notes:
+
+Prompting has evolved. Some prompts live in code, some chain together across tasks, and others use tools like agents or document retrieval. You don't just chat — you architect smart systems around the LLM.
+
+🟦 Slide 8: Prompting In Production
+Slide Content:
+Real-world usage:
+
+Prompting in API calls
+
+Extracting info from documents
+
+Validating business data
+
+Workflow orchestration
+
+Internal copilots
+
+Speaker Notes:
+
+Enterprises use prompting behind the scenes: auto-generating Jira tickets, validating invoices, summarizing documents. Let’s move from theory into action — live demos are next.
+
